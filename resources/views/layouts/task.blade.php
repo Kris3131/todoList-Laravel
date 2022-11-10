@@ -18,6 +18,11 @@
 </head>
 <body>
 <main class="container mx-auto">
+    @if(session()->has('notice'))
+        <div>
+            {{session()->get('notice')}}
+        </div>
+    @endif
     @yield('main')
 </main>
 <script src="{{asset('js/app.js')}}"></script>

@@ -9,6 +9,7 @@
             <div class="mb-4">
                 <h1 class="text-grey-darkest">Todo List</h1>
                 <form action="{{route('tasks.store')}}" method="post" >
+                    @csrf
                     <div class="field flex mt-4">
                         <label for="name">Todo</label>
                         <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 mr-4 text-grey-darker">
