@@ -21,7 +21,7 @@
                     <div class="field flex mt-4">
                         <label for="name">Todo</label>
                         <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 mr-4 text-grey-darker" placeholder="請輸入代辦事項">
-                        <button type="submit">create</button>
+                        <button type="submit" class="btn btn-info">create</button>
                     </div>
                 </form>
             </div>
