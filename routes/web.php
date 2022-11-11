@@ -6,6 +6,7 @@ use App\Http\Controllers\TasksController;
 Route::resource('tasks',TasksController::class);
 
 Route::get('/',[TasksController::class,'index'])->name('root');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
